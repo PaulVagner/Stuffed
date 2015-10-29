@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="1XE-gd-161">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--Game Pad Controller-->
+        <scene sceneID="YjJ-k9-GO5">
+            <objects>
+                <viewController id="1XE-gd-161" customClass="GamePadController" customModule="Stuffed" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="N6g-Oy-aqt"/>
+                        <viewControllerLayoutGuide type="bottom" id="UZ7-Ft-7xt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="F7N-Q8-mMb">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xpo-qZ-NSI">
+                                <rect key="frame" x="202" y="70" width="46" height="45"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.66099821800000003" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Jump">
+                                    <color key="titleColor" red="1" green="0.034578598420000002" blue="0.14930722769999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="jump:" destination="1XE-gd-161" eventType="touchUpInside" id="p9r-an-PxI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4eD-bq-1EH">
+                                <rect key="frame" x="5" y="161" width="46" height="45"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.66099821800000003" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Left">
+                                    <color key="titleColor" red="1" green="0.034578598420000002" blue="0.14930722769999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="left:" destination="1XE-gd-161" eventType="touchUpInside" id="yjw-jd-IAP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xoh-XD-ksb">
+                                <rect key="frame" x="382" y="161" width="46" height="45"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.66099821800000003" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Right">
+                                    <color key="titleColor" red="1" green="0.034578598420000002" blue="0.14930722769999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="right:" destination="1XE-gd-161" eventType="touchUpInside" id="ei2-a6-tVJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oP4-vm-cZt">
+                                <rect key="frame" x="202" y="207" width="46" height="45"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.66099821800000003" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Shoot">
+                                    <color key="titleColor" red="1" green="0.034578598420000002" blue="0.14930722769999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="shoot:" destination="1XE-gd-161" eventType="touchUpInside" id="2UK-g2-i3h"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3n2-9z-yGC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="790" y="333"/>
+        </scene>
+    </scenes>
+</document>

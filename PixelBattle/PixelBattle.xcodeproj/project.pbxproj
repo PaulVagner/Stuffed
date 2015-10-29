@@ -1,0 +1,308 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		44D3F81D1BDE766E00581480 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D3F81C1BDE766E00581480 /* AppDelegate.swift */; };
+		44D3F81F1BDE766E00581480 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 44D3F81E1BDE766E00581480 /* GameScene.sks */; };
+		44D3F8211BDE766E00581480 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D3F8201BDE766E00581480 /* GameScene.swift */; };
+		44D3F8231BDE766E00581480 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D3F8221BDE766E00581480 /* GameViewController.swift */; };
+		44D3F8261BDE766E00581480 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44D3F8241BDE766E00581480 /* Main.storyboard */; };
+		44D3F8281BDE766E00581480 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44D3F8271BDE766E00581480 /* Assets.xcassets */; };
+		44D3F82B1BDE766E00581480 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44D3F8291BDE766E00581480 /* LaunchScreen.storyboard */; };
+		44D3F8341BDE7A1500581480 /* MyParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = 44D3F8321BDE7A1500581480 /* MyParticle.sks */; };
+		44D3F8351BDE7A1500581480 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 44D3F8331BDE7A1500581480 /* spark.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		44D3F8191BDE766E00581480 /* PixelBattle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PixelBattle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		44D3F81C1BDE766E00581480 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		44D3F81E1BDE766E00581480 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		44D3F8201BDE766E00581480 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		44D3F8221BDE766E00581480 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		44D3F8251BDE766E00581480 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		44D3F8271BDE766E00581480 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		44D3F82A1BDE766E00581480 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		44D3F82C1BDE766E00581480 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44D3F8321BDE7A1500581480 /* MyParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MyParticle.sks; sourceTree = "<group>"; };
+		44D3F8331BDE7A1500581480 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		44D3F8161BDE766E00581480 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		44D3F8101BDE766E00581480 = {
+			isa = PBXGroup;
+			children = (
+				44D3F81B1BDE766E00581480 /* PixelBattle */,
+				44D3F81A1BDE766E00581480 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		44D3F81A1BDE766E00581480 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				44D3F8191BDE766E00581480 /* PixelBattle.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		44D3F81B1BDE766E00581480 /* PixelBattle */ = {
+			isa = PBXGroup;
+			children = (
+				44D3F81C1BDE766E00581480 /* AppDelegate.swift */,
+				44D3F81E1BDE766E00581480 /* GameScene.sks */,
+				44D3F8321BDE7A1500581480 /* MyParticle.sks */,
+				44D3F8331BDE7A1500581480 /* spark.png */,
+				44D3F8201BDE766E00581480 /* GameScene.swift */,
+				44D3F8221BDE766E00581480 /* GameViewController.swift */,
+				44D3F8241BDE766E00581480 /* Main.storyboard */,
+				44D3F8271BDE766E00581480 /* Assets.xcassets */,
+				44D3F8291BDE766E00581480 /* LaunchScreen.storyboard */,
+				44D3F82C1BDE766E00581480 /* Info.plist */,
+			);
+			path = PixelBattle;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		44D3F8181BDE766E00581480 /* PixelBattle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44D3F82F1BDE766E00581480 /* Build configuration list for PBXNativeTarget "PixelBattle" */;
+			buildPhases = (
+				44D3F8151BDE766E00581480 /* Sources */,
+				44D3F8161BDE766E00581480 /* Frameworks */,
+				44D3F8171BDE766E00581480 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PixelBattle;
+			productName = PixelBattle;
+			productReference = 44D3F8191BDE766E00581480 /* PixelBattle.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		44D3F8111BDE766E00581480 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Paul Vagner";
+				TargetAttributes = {
+					44D3F8181BDE766E00581480 = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = HVSGYG26E4;
+					};
+				};
+			};
+			buildConfigurationList = 44D3F8141BDE766E00581480 /* Build configuration list for PBXProject "PixelBattle" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 44D3F8101BDE766E00581480;
+			productRefGroup = 44D3F81A1BDE766E00581480 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				44D3F8181BDE766E00581480 /* PixelBattle */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		44D3F8171BDE766E00581480 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44D3F81F1BDE766E00581480 /* GameScene.sks in Resources */,
+				44D3F8351BDE7A1500581480 /* spark.png in Resources */,
+				44D3F82B1BDE766E00581480 /* LaunchScreen.storyboard in Resources */,
+				44D3F8281BDE766E00581480 /* Assets.xcassets in Resources */,
+				44D3F8261BDE766E00581480 /* Main.storyboard in Resources */,
+				44D3F8341BDE7A1500581480 /* MyParticle.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		44D3F8151BDE766E00581480 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44D3F8211BDE766E00581480 /* GameScene.swift in Sources */,
+				44D3F8231BDE766E00581480 /* GameViewController.swift in Sources */,
+				44D3F81D1BDE766E00581480 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		44D3F8241BDE766E00581480 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44D3F8251BDE766E00581480 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		44D3F8291BDE766E00581480 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44D3F82A1BDE766E00581480 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		44D3F82D1BDE766E00581480 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		44D3F82E1BDE766E00581480 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		44D3F8301BDE766E00581480 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PixelBattle/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.paulvagner.PixelBattle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		44D3F8311BDE766E00581480 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PixelBattle/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.paulvagner.PixelBattle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		44D3F8141BDE766E00581480 /* Build configuration list for PBXProject "PixelBattle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44D3F82D1BDE766E00581480 /* Debug */,
+				44D3F82E1BDE766E00581480 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44D3F82F1BDE766E00581480 /* Build configuration list for PBXNativeTarget "PixelBattle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44D3F8301BDE766E00581480 /* Debug */,
+				44D3F8311BDE766E00581480 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 44D3F8111BDE766E00581480 /* Project object */;
+}
