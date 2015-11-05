@@ -40,6 +40,7 @@ class GameBoardController: UIViewController, MCNearbyServiceBrowserDelegate, MCS
         ////////////////////////////////////
         //////////////////////////////////// BROWSER
         ////////////////////////////////////
+        
         //MARK: - Browser
 
         
@@ -132,38 +133,29 @@ class GameBoardController: UIViewController, MCNearbyServiceBrowserDelegate, MCS
         
         if let gameData = GameData.data(data) {
             
-            if let action = gameData.action where .Move == action {
+            if let action = gameData.action {
             
-                scene?.movePixel(peerID.displayName, direction: gameData.direction!.rawValue)
-            
-            }
-            
-        }
-        
-        
-        if let info = try? NSJSONSerialization.JSONObjectWithData(data, options: .MutableContainers) as? [String:String]{
-            
-            //            if let info = NSKeyedUnarchiver.unarchiveObjectWithData(data) as? [String:String] {
-            
-            
-            if let action = info?["action"] where action == "move", let direction = info?["direction"] {
+                switch action {
+                    
+                case .Move :
+                    
+                    if let direction = gameData.direction {
+                        
+                        scene?.movePixel(peerID.displayName, direction: direction)
+                        
+                    }
+                    
+                case .Fire :
+                    
+                    scene?.shootPixel(peerID.displayName)
+                    
+                case .Jump :
+                    
+                    scene?.jumpPixel(peerID.displayName)
+                    
+                    
+                }
                 
-                //                if let direction = info["direction"] {
-                
-                scene?.movePixel(peerID.displayName, direction: direction)
-                
-            }
-            
-            if let action = info?["action"] where action == "jump" {
-                
-                scene?.jumpPixel(peerID.displayName)
-                
-            }
-            
-            if let action = info?["action"] where action == "fire" {
-                
-                scene?.shootPixel(peerID.displayName)
-            
             }
             
         }

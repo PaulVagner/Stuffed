@@ -14,6 +14,8 @@ class GameData: NSObject, NSCoding {
 
     enum GameAction: String {
         
+        //TODO: add (left, Right) into Move
+        
         case Move, Fire, Jump
         
     }

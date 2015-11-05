@@ -9,8 +9,6 @@
 import UIKit
 import MultipeerConnectivity
 
-
-
 class GamePadController: UIViewController, MCNearbyServiceAdvertiserDelegate, MCSessionDelegate {
     
     var session: MCSession!
@@ -99,85 +97,36 @@ class GamePadController: UIViewController, MCNearbyServiceAdvertiserDelegate, MC
     }
     
     
-    
-    
-    
-    //MARK: -Buttons
-    
-    @IBAction func jump(sender: AnyObject) {
-        
-        let info = [
-            
-            "action" : "jump",
-            
-        ]
-        
-        sendInfo(info)
-        print("jump")
-    }
-    
-    
     //MARK: LEFT
     @IBAction func left(sender: AnyObject) {
         
-//        let info = [
-//            
-//            "action" : "move",
-//            "direction" : "left"
-//        ]
-//        
-//        print("left")
-//        
-//        sendInfo(info)
+        sendData(GameData(action: .Move, direction: .Left))
         
-        let gameData = GameData(action: .Move, direction: .Left)
-        
-        sendData(gameData)
-        
-//        //MARK: //NSKeyedArchiver
-//        
-//        let data = NSKeyedArchiver.archivedDataWithRootObject(info)
-//        
-//        if let bID = boardID {
-//        
-//        _ = try? session.sendData(data, toPeers: [bID], withMode: .Reliable)
-        
-        
-        
-//        //MARK: //NSJSONSerialization
-//
-//        if let data = try? NSJSONSerialization.dataWithJSONObject(info, options: .PrettyPrinted) {
-        //
-        //       try? session.sendData(data, toPeers: session.connectedPeers, withMode: .Reliable)
-        
-        //    }
-//        }
     }
+    
+    
     //MARK: RIGHT
     @IBAction func right(sender: AnyObject) {
+    
+        sendData(GameData(action: .Move, direction: .Right))
         
-        let gameData = GameData(action: .Move, direction: .Right)
-        
-        sendData(gameData)
-        
-//        let info = [
-//            
-//            "action" : "move",
-//            "direction" : "right"
-//        ]
-//         print("right")
-//        
-//       sendInfo(info)
-//        
-//        //        //MARK: //NSJSONSerialization
-//        //
-//        //        if let data = try? NSJSONSerialization.dataWithJSONObject(info, options: .PrettyPrinted) {
-//        //
-//        //       try? session.sendData(data, toPeers: session.connectedPeers, withMode: .Reliable)
-//        
-//        //    }
-//        
     }
+    
+    //MARK: JUMP
+    
+    @IBAction func jump(sender: AnyObject) {
+        
+       sendData(GameData(action: .Jump))
+    }
+    
+    //MARK: SHOOT
+    
+    @IBAction func shoot(sender: AnyObject) {
+        
+        sendData(GameData(action: .Fire))
+        
+    }
+    
     
     func sendData(gameData: GameData) {
         
@@ -198,38 +147,7 @@ class GamePadController: UIViewController, MCNearbyServiceAdvertiserDelegate, MC
         
     }
     
-    func sendInfo(info:[String:String]) {
-     
-        if let data = try? NSJSONSerialization.dataWithJSONObject(info, options: .PrettyPrinted) {
-        
-        if let bID = boardID {
-            
-            //            print(session.connectedPeers)
-            
-            do {
-                
-                try session.sendData(data, toPeers: [bID], withMode: .Reliable)
-                
-            } catch {
-                
-               print(error)
-            
-            }
-            
-        }
-        
-    }
-        
-}
-    
-    @IBAction func shoot(sender: AnyObject) {
-        
-        let info = [ "action" : "fire" ]
-        
-        sendInfo(info)
-    
-        print("fire")
-    }
+  
     
     
 }

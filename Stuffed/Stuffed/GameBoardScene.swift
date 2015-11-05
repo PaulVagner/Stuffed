@@ -88,10 +88,7 @@ class GameBoardScene: SKScene {
     func jumpPixel(name: DisplayName) {
         
         playerPixels[name]?.physicsBody?.applyForce(CGVector(dx: 0, dy: 100))
-        
-//        let pixel = self.childNodeWithName(name) as? SKShapeNode
-//        
-//        pixel?.physicsBody?.applyForce(CGVector(dx: 0, dy: 100))
+
     
     }
     func shootPixel(name: DisplayName) {
@@ -130,30 +127,21 @@ class GameBoardScene: SKScene {
     }
         
 
-func movePixel(name: DisplayName, direction: String) {
+func movePixel(name: DisplayName, direction: PlayerDirection) {
     
     let pixel = playerPixels[name]
-    
-    let d = PlayerDirection(rawValue: direction)
 
-    let offsetX = (d?.dValue ?? 0) * 50
-
-//    let offsetX = direction == "right" ? 50 : direction == "left" ? -50 : 0
-//    let offsetY = 0
     
-    pixel?.physicsBody?.applyForce(CGVector(dx: offsetX, dy: 0))
+    pixel?.physicsBody?.applyForce(CGVector(dx: direction.dValue * 50, dy: 0))
     
-    currentDirections[name] = d
+    currentDirections[name] = direction
  
-    
     
     }
     
     func removePixel(name: DisplayName) {
         
         playerPixels[name]?.removeFromParent()
-        
-//        pixel?.removeFromParent()
         
         
     }
